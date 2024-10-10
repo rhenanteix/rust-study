@@ -8,7 +8,7 @@
 
 <img src="game.jpg" alt="Exemplo imagem">
 
-> Jogo de adivinhações com melhorias, feito em Rust
+> The game for Rust > Aprendendo jogando com Rust de forma intuitiva e divertida
 
 ### Ajustes e melhorias
 
