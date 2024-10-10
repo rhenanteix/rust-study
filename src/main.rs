@@ -5,15 +5,22 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    println!("Adivinhe o número");
+    println!("Jogo da adivinhação");
+
+   
+   let mut fase = 1;
+    loop {
+        
+    
+    println!("Fase {}", fase);
 
     let numero_secreto = rand::thread_rng().gen_range(1, 101);
 
-    println!("O número secreto é: {}", numero_secreto);
+   // println!("O número secreto é: {}", numero_secreto);
 
     loop {
         
-
+        
         println!("Digite o seu palpite.");
 
         let mut  palpite = String::new();
@@ -37,5 +44,10 @@ fn main() {
              break;
             }
         }
+
     } 
+    fase += 1;
+    println!("Parabéns! Você passou para a fase {} .\n", fase);
+
+}
 }
