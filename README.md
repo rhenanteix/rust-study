@@ -17,7 +17,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Criar niveis para o jogo
 - [x] A cada acerto o usuário passa de fase e ganha mais 5 lifes
 - [x] O usuário começa com 10 points life para usar nas fases
-- [ ] Quando o usuário tiver 0 life points > precisa dar Game Over
+- [x] Quando o usuário tiver 0 life points > precisa dar Game Over
 - [ ] Cada nível existe uma dificuldade um pouco mais difícil
 
 ## 💻 Pré-requisitos

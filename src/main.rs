@@ -49,18 +49,29 @@ fn main() {
              println!("Você acertou!!");
              break;
             }
+        }  
+
+        if points <= 0 {
+            println!("Game Over, você perdeu");
+            break;
         }
 
-  
+    
 
     }
+    if points <= 0 {
+        break;
+    }
+
     fase += 1;
     points += 5;
     println!("Parabéns! Você passou para a fase {} .\n", fase);
-    if points == 0 {
-        println!("Game Over, você perdeu");
-        break;    
-    }
+
+    // if points == 0 {
+    //     println!("Game Over, você perdeu");
+    //     break;    
+    // } 
+    
 
 }
 }
