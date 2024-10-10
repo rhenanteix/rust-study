@@ -16,8 +16,6 @@ fn main() {
 
     let numero_secreto = rand::thread_rng().gen_range(1, 101);
 
-   // println!("O número secreto é: {}", numero_secreto);
-
     loop {
         
         
