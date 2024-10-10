@@ -10,6 +10,7 @@ fn main() {
    
    let mut fase = 1;
    let mut points = 10;
+
     loop {
         
     
@@ -50,9 +51,16 @@ fn main() {
             }
         }
 
-    } 
+  
+
+    }
     fase += 1;
+    points += 5;
     println!("Parabéns! Você passou para a fase {} .\n", fase);
+    if points == 0 {
+        println!("Game Over, você perdeu");
+        break;    
+    }
 
 }
 }
