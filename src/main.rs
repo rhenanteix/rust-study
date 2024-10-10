@@ -9,11 +9,12 @@ fn main() {
 
    
    let mut fase = 1;
+   let mut points = 10;
     loop {
         
     
     println!("Fase {}", fase);
-
+    println!("Você tem {} chances", points);    
     let numero_secreto = rand::thread_rng().gen_range(1, 101);
 
     loop {
@@ -35,8 +36,14 @@ fn main() {
         println!("Você disse {}", palpite);
 
         match palpite.cmp(&numero_secreto) {
-            Ordering::Less => println!("Muito baixo!"),
-            Ordering::Greater => println!("Muito alto!"),
+            Ordering::Less => {
+                points -= 1;
+                println!("Muito baixo! Perdeu ponto")  
+            } 
+            Ordering::Greater => {
+                points -= 1;
+                println!("Muito alto! Perdeu ponto")
+            } 
             Ordering::Equal => {
              println!("Você acertou!!");
              break;
