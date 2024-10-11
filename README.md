@@ -23,43 +23,43 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Novas features >
 
-- [] 1. Dificuldade Crescente
-   - [] Variedade de limites: Conforme o jogador avança de fase, aumente a faixa de números possíveis (ex.: fase 1 = 1 a 100, fase 2 = 1 a 200, fase 3 = 1 a 300).
-   - []  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
+- [ ] 1. Dificuldade Crescente
+   - [ ] Variedade de limites: Conforme o jogador avança de fase, aumente a faixa de números possíveis (ex.: fase 1 = 1 a 100, fase 2 = 1 a 200, fase 3 = 1 a 300).
+   - [ ]  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
 
-- [] 2. Modos de Jogo Diferentes
-  - [] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
-  - [] Modo cronometrado: Adicione um cronômetro que limite o tempo total para adivinhar. Se o tempo acabar, o jogador perde automaticamente.
+- [ ] 2. Modos de Jogo Diferentes
+  - [ ] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
+  - [ ] Modo cronometrado: Adicione um cronômetro que limite o tempo total para adivinhar. Se o tempo acabar, o jogador perde automaticamente.
 
-- [] 3. Histórico de Tentativas
-    - [] Mostrar tentativas anteriores: Exiba os números já tentados pelo jogador para ajudar a tomar decisões melhores.
-    - [] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
+- [ ] 3. Histórico de Tentativas
+    - [ ] Mostrar tentativas anteriores: Exiba os números já tentados pelo jogador para ajudar a tomar decisões melhores.
+    - [ ] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
 
-- [] 4. Vidas Extras ou Power-ups
-   - [] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
-   - [] Power-ups: Implemente power-ups que podem ser coletados durante o jogo, como dicas adicionais, revelação de dígitos do número secreto, ou proteção que impede a perda de pontos em um erro.
+- [ ] 4. Vidas Extras ou Power-ups
+   - [ ] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
+   - [ ] Power-ups: Implemente power-ups que podem ser coletados durante o jogo, como dicas adicionais, revelação de dígitos do número secreto, ou proteção que impede a perda de pontos em um erro.
 
-- [] 5. Sistema de Conquistas e Pontuação
- - [] Conquistas: Adicione desafios, como "Adivinhar em menos de 5 tentativas" ou "Terminar 5 fases seguidas sem perder uma vida."
- - [] Pontuação acumulativa: Além de "life points", mantenha uma pontuação total que aumente conforme o jogador avança de fase e adivinhe corretamente com menos tentativas.
+- [ ] 5. Sistema de Conquistas e Pontuação
+ - [ ] Conquistas: Adicione desafios, como "Adivinhar em menos de 5 tentativas" ou "Terminar 5 fases seguidas sem perder uma vida."
+ - [ ] Pontuação acumulativa: Além de "life points", mantenha uma pontuação total que aumente conforme o jogador avança de fase e adivinhe corretamente com menos tentativas.
 
-- [] 6. Variação de Fases
-  - [] Fases especiais: Adicione fases bônus ou com mecânicas especiais, como fases onde os números secretos mudam a cada tentativa ou fases com dois números secretos    para adivinhar.
-  - []Níveis temáticos: Varie a ambientação das fases para criar uma sensação de progressão (ex.: florestas, desertos, cidades).
+- [ ] 6. Variação de Fases
+  - [ ] Fases especiais: Adicione fases bônus ou com mecânicas especiais, como fases onde os números secretos mudam a cada tentativa ou fases com dois números secretos    para adivinhar.
+  - [ ] Níveis temáticos: Varie a ambientação das fases para criar uma sensação de progressão (ex.: florestas, desertos, cidades).
 
-- [] 7. Desafios Diários
-   - [] Desafio do dia: Crie um modo de jogo onde o jogador só pode jogar uma fase especial por dia, com regras ou mecânicas únicas, incentivando a volta ao jogo diariamente.
+- [ ] 7. Desafios Diários
+   - [ ] Desafio do dia: Crie um modo de jogo onde o jogador só pode jogar uma fase especial por dia, com regras ou mecânicas únicas, incentivando a volta ao jogo diariamente.
 
-- [] 8. Personagens e Customização
-- [] Avatares de jogador: Permita ao jogador escolher ou desbloquear avatares que representem o personagem nas fases.
-- [] Personalização: Ofereça opções de customização, como skins ou temas para o visual do jogo conforme o jogador progride.
+- [ ] 8. Personagens e Customização
+- [ ] Avatares de jogador: Permita ao jogador escolher ou desbloquear avatares que representem o personagem nas fases.
+- [ ] Personalização: Ofereça opções de customização, como skins ou temas para o visual do jogo conforme o jogador progride.
 
-- [] 9. Multiplayer
-- [] Modo de jogo contra outros jogadores: Adicione um modo competitivo onde dois jogadores tentam adivinhar o número secreto ao mesmo tempo, e quem acertar primeiro vence.
- - [] Desafios em equipe: Introduza um modo cooperativo, onde dois jogadores compartilham vidas e precisam trabalhar juntos para adivinhar os números.
+- [ ] 9. Multiplayer
+- [ ] Modo de jogo contra outros jogadores: Adicione um modo competitivo onde dois jogadores tentam adivinhar o número secreto ao mesmo tempo, e quem acertar primeiro vence.
+ - [ ] Desafios em equipe: Introduza um modo cooperativo, onde dois jogadores compartilham vidas e precisam trabalhar juntos para adivinhar os números.
 
- - [] 10. Estatísticas do Jogador
-- [] Registro de desempenho: Mostre um painel de estatísticas com informações como tentativas totais, fases completadas, pontuação máxima, e acertos em primeira tentativa.
+ - [ ] 10. Estatísticas do Jogador
+- [ ] Registro de desempenho: Mostre um painel de estatísticas com informações como tentativas totais, fases completadas, pontuação máxima, e acertos em primeira tentativa.
 
 
 ## 💻 Pré-requisitos
