@@ -23,9 +23,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Novas features >
 
-- [ ] 1. Dificuldade Crescente
+- [x] 1. Dificuldade Crescente
    - [x] Variedade de limites: Conforme o jogador avança de fase, aumente a faixa de números possíveis (ex.: fase 1 = 1 a 100, fase 2 = 1 a 200, fase 3 = 1 a 300).
-   - [ ]  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
+   - [x]  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
 
 - [ ] 2. Modos de Jogo Diferentes
   - [ ] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
