@@ -1,11 +1,13 @@
 extern crate rand;
+extern crate colored;
 
 use std::io;
+use colored::Colorize;
 use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    println!("Jogo da adivinhação");
+    println!("{}", "Jogo da adivinhação".red());
 
    loop {
    let mut fase = 1;
@@ -40,11 +42,19 @@ fn main() {
         match palpite.cmp(&numero_secreto) {
             Ordering::Less => {
                 points -= 1;
-                println!("Muito baixo! Perdeu ponto")  
+                println!("Muito baixo! Perdeu ponto");  
+                if palpite + 10 >= numero_secreto {
+                    println!("Dica: Você está próximo");
+                }
             } 
             Ordering::Greater => {
+                
                 points -= 1;
-                println!("Muito alto! Perdeu ponto")
+                println!("Muito alto! Perdeu ponto");
+
+                if palpite - 10 <= numero_secreto {
+                    println!("Dica: Você está quase lá");
+                }
             } 
             Ordering::Equal => {
              println!("Você acertou!!");
@@ -65,7 +75,10 @@ fn main() {
 
     fase += 1;
     points += 5;
-    println!("Parabéns! Você passou para a fase {} .\n", fase);
+    println!("{}",  format!("Parabéns! Você passou para a fase {} .\n", fase).green())
+    
+    
+    
 
 
   }
