@@ -8,7 +8,16 @@ use rand::Rng;
 
 fn print_for_animation(text: &str) {
     for c in text.chars() {
-        print!("{}", c.to_string().red());
+        print!("{}", c.to_string().bright_green());
+        io::stdout().flush().unwrap();
+        sleep(Duration::from_millis(100));
+    }
+    println!();
+}
+
+fn choice_nivel_animation(text: &str) {
+    for u in text.chars() {
+        print!("{}", u.to_string().bright_green());
         io::stdout().flush().unwrap();
         sleep(Duration::from_millis(100));
     }
@@ -17,7 +26,7 @@ fn print_for_animation(text: &str) {
 fn main() {
     print_for_animation("Bem vindo ao jogo da adivinhação");
 
-    println!("Escolha um nível de dificuldade");
+    choice_nivel_animation("Escolha um nível de dificuldade");
     println!("{}","1- Fácil".blue());
     println!("{}", "2- Médio".purple());
     println!("{}", "3- Difícil".red());
