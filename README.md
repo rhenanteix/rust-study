@@ -18,13 +18,13 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] A cada acerto o usuário passa de fase e ganha mais 5 lifes
 - [x] O usuário começa com 10 points life para usar nas fases
 - [x] Quando o usuário tiver 0 life points > precisa dar Game Over
-- [ ] Cada nível existe uma dificuldade um pouco mais difícil
+- [x] Cada nível existe uma dificuldade um pouco mais difícil
 
 
 Novas features >
 
 - [ ] 1. Dificuldade Crescente
-   - [ ] Variedade de limites: Conforme o jogador avança de fase, aumente a faixa de números possíveis (ex.: fase 1 = 1 a 100, fase 2 = 1 a 200, fase 3 = 1 a 300).
+   - [x] Variedade de limites: Conforme o jogador avança de fase, aumente a faixa de números possíveis (ex.: fase 1 = 1 a 100, fase 2 = 1 a 200, fase 3 = 1 a 300).
    - [ ]  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
 
 - [ ] 2. Modos de Jogo Diferentes

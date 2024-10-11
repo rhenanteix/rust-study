@@ -12,12 +12,13 @@ fn main() {
    let mut points = 10;
 
     loop {
-        
+        let limite = fase * 100;
     
-    println!("Fase {}", fase);
+    println!("Fase {}: Adivinhe um número entre 1 e {}", fase, limite);
     println!("Você tem {} chances", points);    
-    let numero_secreto = rand::thread_rng().gen_range(1, 101);
-
+    
+    let numero_secreto = rand::thread_rng().gen_range(1, limite);
+   
     loop {
         
         
@@ -55,7 +56,6 @@ fn main() {
             println!("Game Over, você perdeu");
             break;
         }
-
     
 
     }
@@ -66,6 +66,7 @@ fn main() {
     fase += 1;
     points += 5;
     println!("Parabéns! Você passou para a fase {} .\n", fase);
+
 
   }
   println!("Reiniciando o jogo...\n");
