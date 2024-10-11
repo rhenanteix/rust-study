@@ -1,0 +1,35 @@
+# Diretório de build
+/target/
+
+# Diretório de dependências específicas de compilação (somente para compilação local)
+/cargo.lock
+
+# Arquivos de configuração do editor/IDE
+**/*.rs.bk
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Archivos binários e executáveis
+*.exe
+*.out
+*.o
+*.d
+
+# Diretórios criados por test runners ou ferramentas auxiliares
+/tests/output/
+
+# Arquivos de debug gerados (geralmente em Windows)
+*.pdb
+
+# Cobertura de código gerada por ferramentas como kcov ou tarpaulin
+/coverage/
+
+# Outros arquivos ocultos que possam ser gerados
+/.DS_Store
+Thumbs.db

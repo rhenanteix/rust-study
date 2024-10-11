@@ -7,7 +7,7 @@ use rand::Rng;
 fn main() {
     println!("Jogo da adivinhação");
 
-   
+   loop {
    let mut fase = 1;
    let mut points = 10;
 
@@ -67,11 +67,8 @@ fn main() {
     points += 5;
     println!("Parabéns! Você passou para a fase {} .\n", fase);
 
-    // if points == 0 {
-    //     println!("Game Over, você perdeu");
-    //     break;    
-    // } 
-    
+  }
+  println!("Reiniciando o jogo...\n");
 
 }
 }
