@@ -28,7 +28,7 @@ Novas features >
    - [x]  Dicas: Adicione dicas nas fases mais avançadas, como informar se o número secreto está em um intervalo específico (ex.: "Está entre 50 e 100").
 
 - [ ] 2. Modos de Jogo Diferentes
-  - [ ] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
+  - [x] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
   - [ ] Modo cronometrado: Adicione um cronômetro que limite o tempo total para adivinhar. Se o tempo acabar, o jogador perde automaticamente.
 
 - [ ] 3. Histórico de Tentativas
