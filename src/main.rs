@@ -53,7 +53,7 @@ fn main() {
     io::stdin().read_line(&mut modo_cronometrado).expect("Erro ao ler entrada");
 
     let usar_cronometrado = modo_cronometrado.trim().to_lowercase() == "s";
-    let tempo_limite = Duration::new(30, 0);
+    let tempo_limite = Duration::new(300, 0);
 
    loop {
    let mut fase = 1;
