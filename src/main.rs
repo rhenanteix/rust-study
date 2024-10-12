@@ -1,7 +1,7 @@
 extern crate rand;
 extern crate colored;
 
-use std::{io::{self, Write}, thread::sleep, time::Duration};
+use std::{io::{self, Write}, thread::sleep, time::{Duration, Instant}};
 use colored::Colorize;
 use std::cmp::Ordering;
 use rand::Rng;
@@ -23,6 +23,12 @@ fn choice_nivel_animation(text: &str) {
     }
     println!();
 }
+
+fn countdown() {
+    let start = Instant::now();
+    let mut time_play = Duration::from_secs(1 * 60);
+}
+
 fn main() {
     print_for_animation("Bem vindo ao jogo da adivinhação");
 
@@ -42,6 +48,23 @@ fn main() {
         _ => {
             println!("Modo inválido! Iniciando no modo médio por padrão.");
             (10, false) 
+        }
+    };
+
+    choice_nivel_animation("Jogo cronometrado");
+    println!("{}","1- Sim".red());
+    println!("{}", "2- Não".green());
+
+    let mut cron = String::new();
+    io::stdin().read_line(&mut cron).expect("Falha ao ler a entrada");
+    let cron: u32 = cron.trim().parse().expect("Por favor, insira um número");
+
+    let (tempo) = match  cron {
+        1 => (true),
+        2 => (false),
+        _ => {
+            println!("Modo inválido! Iniciando no modo médio por padrão.");
+            (false) 
         }
     };
 
