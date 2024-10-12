@@ -24,10 +24,6 @@ fn choice_nivel_animation(text: &str) {
     println!();
 }
 
-fn countdown() {
-    let start = Instant::now();
-    let mut time_play = Duration::from_secs(1 * 60);
-}
 
 fn main() {
     print_for_animation("Bem vindo ao jogo da adivinhação");
@@ -51,22 +47,13 @@ fn main() {
         }
     };
 
-    choice_nivel_animation("Jogo cronometrado");
-    println!("{}","1- Sim".red());
-    println!("{}", "2- Não".green());
+    println!("{}", "Você quer um jogo cronometrado? (s/n)".blue());
 
-    let mut cron = String::new();
-    io::stdin().read_line(&mut cron).expect("Falha ao ler a entrada");
-    let cron: u32 = cron.trim().parse().expect("Por favor, insira um número");
+    let mut modo_cronometrado = String::new();
+    io::stdin().read_line(&mut modo_cronometrado).expect("Erro ao ler entrada");
 
-    let (tempo) = match  cron {
-        1 => (true),
-        2 => (false),
-        _ => {
-            println!("Modo inválido! Iniciando no modo médio por padrão.");
-            (false) 
-        }
-    };
+    let usar_cronometrado = modo_cronometrado.trim().to_lowercase() == "s";
+    let tempo_limite = Duration::new(30, 0);
 
    loop {
    let mut fase = 1;
@@ -81,8 +68,24 @@ fn main() {
     
     let numero_secreto = rand::thread_rng().gen_range(1, limite);
    
+     let inicio_fase = if usar_cronometrado {
+         Some(Instant::now())
+     } else {
+        None
+     };   
+
     loop {
         
+        if usar_cronometrado {
+            if let Some(inicio) = inicio_fase  {
+                if inicio.elapsed() > tempo_limite {
+                    println!("{}", "Tempo esgotado, você perdeu".red());
+                    break;
+                }
+                println!("Tempo restante: {:.2} segundos", tempo_limite.as_secs_f64() - inicio.elapsed().as_secs_f64());
+                
+            }
+        }
         
         println!("Digite o seu palpite.");
 
@@ -118,19 +121,18 @@ fn main() {
             } 
             Ordering::Greater => {
                 points -= 1;
-                
-                if  dicas_detalhadas {
-                    if (numero_secreto - palpite) > 50 {
-                        println!("{}", "Muito baixo! Tente um número bem menor.".red());
-                    } else if (numero_secreto - palpite) > 20 {
-                        println!("{}", "Um pouco baixo! Tente um número menor.".red());
+                if dicas_detalhadas {
+                    if (palpite - numero_secreto) > 50 {
+                        println!("{}", "Muito alto! Tente um número bem menor.".red());
+                    } else if (palpite - numero_secreto) > 20 {
+                        println!("{}", "Um pouco alto! Tente um número menor.".red());
                     } else {
                         println!("{}", "Quase! Um pouco menor.".red());
-                    }  
+                    }
                 } else {
-                    println!("{}", "Muito baixo! Perdeu uma vida".red());  
+                    println!("{}", "Muito alto! Perdeu uma vida.".red());
                 }
-            } 
+            }
             Ordering::Equal => {
              println!("Você acertou!!");
              break;
@@ -140,6 +142,10 @@ fn main() {
         if points <= 0 {
             println!("Game Over, você perdeu");
             break;
+        }
+
+        if points <= 0  || (usar_cronometrado && inicio_fase.unwrap().elapsed() > tempo_limite) {
+         break;   
         }
     
 
