@@ -67,6 +67,7 @@ fn main() {
     println!("Você tem {} chances", points);    
     
     let numero_secreto = rand::thread_rng().gen_range(1, limite);
+    let mut historico_palpites: Vec<u32> = Vec::new(); // armazena dados Vec
    
      let inicio_fase = if usar_cronometrado {
          Some(Instant::now())
@@ -88,6 +89,7 @@ fn main() {
         }
         
         println!("Digite o seu palpite.");
+        println!("Seu histórico de palpites: {:?}", historico_palpites);
 
         let mut  palpite = String::new();
 
@@ -98,6 +100,8 @@ fn main() {
             Ok(num) => num,
             Err(_)=> continue,
         };
+
+        historico_palpites.push(palpite);
 
         
         println!("Você disse {}", palpite);
@@ -139,8 +143,11 @@ fn main() {
             }
         }  
 
+        
+
         if points <= 0 {
             println!("Game Over, você perdeu");
+            println!("Seu histórico final foi: {:?}", historico_palpites);
             break;
         }
 
@@ -156,7 +163,9 @@ fn main() {
 
     fase += 1;
     points += 5;
-    println!("{}",  format!("Parabéns! Você passou para a fase {} .\n", fase).green())
+    println!("{}",  format!("Parabéns! Você passou para a fase {} .\n", fase).green());
+    println!("Seu histórico final foi: {:?}", historico_palpites);
+
     
     
     

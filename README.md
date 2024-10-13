@@ -31,9 +31,9 @@ Novas features >
   - [x] Modo fácil, médio e difícil: No modo fácil, o jogador pode ter mais vidas e dicas mais detalhadas. No modo difícil, menos vidas e sem dicas.
   - [x] Modo cronometrado: Adicione um cronômetro que limite o tempo total para adivinhar. Se o tempo acabar, o jogador perde automaticamente.
 
-- [ ] 3. Histórico de Tentativas
-    - [ ] Mostrar tentativas anteriores: Exiba os números já tentados pelo jogador para ajudar a tomar decisões melhores.
-    - [ ] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
+- [x] 3. Histórico de Tentativas
+    - [x] Mostrar tentativas anteriores: Exiba os números já tentados pelo jogador para ajudar a tomar decisões melhores.
+    - [x] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
 
 - [ ] 4. Vidas Extras ou Power-ups
    - [ ] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
