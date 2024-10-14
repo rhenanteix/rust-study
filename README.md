@@ -35,9 +35,9 @@ Novas features >
     - [x] Mostrar tentativas anteriores: Exiba os números já tentados pelo jogador para ajudar a tomar decisões melhores.
     - [x] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
 
-- [ ] 4. Vidas Extras ou Power-ups
+- [x] 4. Vidas Extras ou Power-ups
    - [x] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
-   - [ ] Power-ups: Implemente power-ups que podem ser coletados durante o jogo, como dicas adicionais, revelação de dígitos do número secreto, ou proteção que impede a perda de pontos em um erro.
+   - [x] Power-ups: Implemente power-ups que podem ser coletados durante o jogo, como dicas adicionais, revelação de dígitos do número secreto, ou proteção que impede a perda de pontos em um erro.
 
 - [ ] 5. Sistema de Conquistas e Pontuação
  - [ ] Conquistas: Adicione desafios, como "Adivinhar em menos de 5 tentativas" ou "Terminar 5 fases seguidas sem perder uma vida."
