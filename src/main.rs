@@ -47,6 +47,8 @@ fn main() {
         }
     };
 
+    
+
     println!("{}", "Você quer um jogo cronometrado? (s/n)".blue());
 
     let mut modo_cronometrado = String::new();
@@ -58,6 +60,7 @@ fn main() {
    loop {
    let mut fase = 1;
    let mut points = vidas_iniciais;
+   
 
 
     loop {
@@ -68,6 +71,11 @@ fn main() {
     
     let numero_secreto = rand::thread_rng().gen_range(1, limite);
     let mut historico_palpites: Vec<u32> = Vec::new(); // armazena dados Vec
+
+    let mut tentativas = 0;
+
+    let tentativas_rapidas = 3;
+    let bonus = 5;
    
      let inicio_fase = if usar_cronometrado {
          Some(Instant::now())
@@ -102,6 +110,7 @@ fn main() {
         };
 
         historico_palpites.push(palpite);
+        tentativas += 1;
 
         
         println!("Você disse {}", palpite);
@@ -137,8 +146,15 @@ fn main() {
                     println!("{}", "Muito alto! Perdeu uma vida.".red());
                 }
             }
-            Ordering::Equal => {
+            
+
+            Ordering::Equal => {   
              println!("Você acertou!!");
+             if tentativas <= tentativas_rapidas {
+                 points += bonus;
+                 println!("Você ganhou {} vidas extras por acertar rápido!", bonus);
+
+             }
              break;
             }
         }  
@@ -159,17 +175,12 @@ fn main() {
     }
     if points <= 0 {
         break;
-    }
+    } 
 
     fase += 1;
     points += 5;
     println!("{}",  format!("Parabéns! Você passou para a fase {} .\n", fase).green());
     println!("Seu histórico final foi: {:?}", historico_palpites);
-
-    
-    
-    
-
 
   }
   println!("Reiniciando o jogo...\n");

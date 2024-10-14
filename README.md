@@ -36,7 +36,7 @@ Novas features >
     - [x] Análise de desempenho: No final de cada fase, mostre um resumo com o número de tentativas e pontos perdidos.
 
 - [ ] 4. Vidas Extras ou Power-ups
-   - [ ] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
+   - [x] Vidas extras: Dê ao jogador a possibilidade de ganhar vidas extras ao acertar o número secreto rapidamente (por exemplo, nas primeiras tentativas).
    - [ ] Power-ups: Implemente power-ups que podem ser coletados durante o jogo, como dicas adicionais, revelação de dígitos do número secreto, ou proteção que impede a perda de pontos em um erro.
 
 - [ ] 5. Sistema de Conquistas e Pontuação
