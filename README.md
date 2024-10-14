@@ -1,14 +1,16 @@
 # The Crab Game Show
-
-![GitHub repo size](https://img.shields.io/github/repo-size/rhenanteix/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/rhenanteix/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/rhenanteix/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/github/issues/rhenanteix/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/github/pr-raw/rhenanteix/README-template?style=for-the-badge)
-
 <img src="game.jpg" alt="Exemplo imagem">
 
 > The game for Rust > Aprendendo jogando com Rust de forma intuitiva e divertida
+
+### Sobre o game
+O jogo é um exemplo da documentação do Rust: 
+
+```
+`https://rust-br.github.io/rust-book-pt-br/ch02-00-guessing-game-tutorial.html`
+
+```
+A idéia é fazer melhorias encima do jogo, colocando novas features em formato de estudo para conhecer ainda mais o Rust.
 
 ### Ajustes e melhorias
 
